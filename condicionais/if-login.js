@@ -1,13 +1,13 @@
-let login = "gt123"
-let senha = 123456
+// crie um sistema de verificações para login/senha
+// se a senha for igual ao valor indicado: imprima
+// com console.log ("pagina liberada"), senão for igual
+// imprima console.log("dados corretos")
 
-if (login == "gt123") {
-    console.log("Login, correto!")
-}else if(senha >= 6 && senha <= 100){
-console.log("Bem, vindo(a)")
-console.log("")
-}
- else {
-    console.log("Login, incorreto!")
-    console.log("Senha, incorreta!")
+let login = "gt123"
+let senha = '123456'
+
+if (login == "gt123" && senha == 123456) {
+    console.log("redicionando para painel!")
+} else {
+    console.log("Erro, favor digite dados corretamente")
 }
