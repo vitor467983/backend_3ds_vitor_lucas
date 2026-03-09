@@ -15,3 +15,8 @@ frutas.push("lichia")
 console.log(frutas)
 frutas.pop()
 console.log(frutas)
+for (const fruta of frutas) {
+    console.log(fruta + "removida...")
+    frutas.pop()
+}
+console.log(frutas)
