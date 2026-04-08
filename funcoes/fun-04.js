@@ -13,5 +13,5 @@ function sobraDoSalario(meuSalario){
 }
 const minhasSobras = sobraDoSalario(1700.0)
 // teste - experimento
-console.log(sobraDoSalario(19++000.0))
+console.log(sobraDoSalario(19000.0))
 console.log(minhasSobras)
