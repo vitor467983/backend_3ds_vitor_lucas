@@ -21,8 +21,8 @@ function subtraiPorDois (n1,n2){
 }
 
 module.exports = {
-    dividePorDois
-    multiplicaPorDois
-    somaPorDois
-    subtraiPorDois
+    dividePorDois,
+ multiplicaPorDois,
+ somaPorDois,
+ subtraiPorDois
 }
