@@ -11,5 +11,5 @@ return `Gato ${racaGato} fez uma tosa tipo: ${tipoTosa}`
 }
 
 export function alimentarGATO(racaGato, tipoRacao){
-return `Gato ${racaGato} comeu uma racao tipo: ${tipoRacao}`
+return `Gato ${racaGato} comeu uma comida tipo: ${tipoRacao}`
 }
