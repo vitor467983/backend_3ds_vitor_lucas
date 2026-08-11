@@ -1,16 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conheça nossa empresa | Teste</title>
+    <title>Logando no nosso servidor de minecraft | teste</title>
     <style>
-        body {background-color: azure;}
+        :root {
+            color-scheme: light;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f0f8ff;
+            color: #1f2937;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top left, #ffffff, #d1e8ff 40%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            padding: 2rem;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #0f172a;
+            font-size: clamp(2rem, 3vw, 2.6rem);
+        }
+
+        p {
+            line-height: 1.75;
+            margin: 1rem 0 1.5rem;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 0.85rem 1.2rem;
+            border-radius: 999px;
+            background: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        a.button:hover,
+        a.button:focus-visible {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <h3>Página Sobre nós</h3>
-    <p>lorem</p>
-    <a href="/sobre">Página Sobre</a>
+    <main class="container">
+        <h1>Sobre nós</h1>
+        <p>Bem-vindo ao nosso servidor de Minecraft! Aqui você encontra informações sobre nosso servidor, nossos valores e o que nos torna uma equipe confiável e dedicada.</p>
+        <p>Nosso compromisso é entregar qualidade em cada etapa do servidor, com atendimento dedicado e soluções feitas para os jogadores.</p>
+        <a class="button" href="/sobre">Conheça nossa história</a>
+    </main>
 </body>
 </html>

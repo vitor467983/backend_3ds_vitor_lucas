@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Página não encontrada</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #05111c;
+            color: #f8fafc;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            background: radial-gradient(circle at top, rgba(46, 126, 56, 0.2), transparent 28%),
+                        linear-gradient(180deg, #071017 0%, #040a10 100%);
+        }
+
+        .card {
+            width: min(100%, 760px);
+            padding: 2.2rem;
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(3, 10, 18, 0.96);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: rgba(45, 125, 62, 0.14);
+            color: #c7f0d1;
+            padding: 0.75rem 1rem;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            letter-spacing: 0.1em;
+            line-height: 1;
+            color: #f8fafc;
+        }
+
+        p {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 0.95rem 1.4rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(135deg, #34d399, #10b981);
+            box-shadow: 0 16px 35px rgba(34, 96, 64, 0.32);
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .image-card {
+            border-radius: 22px;
+            overflow: hidden;
+            min-height: 260px;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 720px) {
+            .card {
+                padding: 1.75rem;
+            }
+
+            .actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <span class="badge">🚧 Erro 404</span>
+        <h1>Esta página não existe</h1>
+        <p>O endereço que você tentou acessar não foi encontrado neste servidor. Volte para a página inicial ou explore outra rota.</p>
+        <div class="actions">
+            <a class="button" href="/">Ir para o início</a>
+        </div>
+        <div class="image-card">
+            <img src="https://source.unsplash.com/900x500/?minecraft,forest" alt="Ambiente estilo Minecraft ilustrando a página não encontrada" loading="lazy">
+        </div>
+    </article>
+</body>
+</html>
