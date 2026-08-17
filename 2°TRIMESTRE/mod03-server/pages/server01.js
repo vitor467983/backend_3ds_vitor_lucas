@@ -1,7 +1,8 @@
 const http = require('http')
 const fs = require('fs')
 const path = require('path')
-const porta = process.env.PORT || 3000
+
+const porta = 3000
 
 const home = path.join(__dirname, 'index.html')
 const sobre = path.join(__dirname, 'sobre.html')
