@@ -7,6 +7,7 @@ const porta = 3000
 const home = path.join(__dirname, 'pages/index.html')
 const sobre = path.join(__dirname, 'pages/sobre.html')
 const notFound = path.join(__dirname, 'pages/404.html')
+const pinguim = path.join(__dirname, 'images/pinguim.png')
 const css = path.join(__dirname, 'public/estilo.css')
 
 const server = http.createServer((req, res) => {
@@ -29,7 +30,7 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'text/css')
         return res.end(fs.readFileSync(css, 'utf-8'))
     }
-    if (caminhoUrl === '/' || caminhoUrl === '/images/pinguim.png') {
+    if (caminhoUrl === '/images/pinguim.png') {
         res.statusCode = 200
         res.setHeader('Content-Type', 'image/png')
         return res.end(fs.readFileSync(pinguim))
