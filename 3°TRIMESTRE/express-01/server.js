@@ -10,4 +10,12 @@ app.get('/', (req, res) => { // calback ou retorno
     res.sendFile('src/pages/index.html', {root: baseDir})
 })
 
+app.get('/produtos', (req, res) => { // calback ou retorno
+    res.sendFile('src/pages/produtos.html', {root: baseDir})
+})
+
+app.get('/servicos', (req, res) => { // calback ou retorno
+    res.sendFile('src/pages/servicos.html', {root: baseDir})
+})
+
 app.listen(PORT, () => { console.log('Servidor Ok na porta '+PORT)})
