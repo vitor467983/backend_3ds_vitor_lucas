@@ -1,0 +1,28 @@
+/* RESET E CONFIGURAÇÕES CORPORATIVAS */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+html { scroll-behavior: smooth; }
+body { background-color: #2b2b2b; color: #ffffff; display: flex; flex-direction: column; min-height: 100vh; }
+
+/* HEADER FIXO SUPERIOR */
+header { background-color: #b91c1c; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 0.5px; }
+nav a { color: #ffffff; text-decoration: none; margin-left: 1.5rem; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; transition: color 0.2s ease; }
+nav a:hover { color: #f97316; }
+
+/* CONTEÚDO PRINCIPAL */
+main { flex: 1; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+main h1 { font-size: 2rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem; text-align: center; }
+
+/* ELEMENTOS EXCLUSIVOS DO HISTÓRICO DE PEDIDOS */
+.orders-list { display: flex; flex-direction: column; gap: 1.5rem; }
+.order-card { background-color: #374151; border-radius: 6px; border: 1px solid #4b5563; overflow: hidden; }
+.order-header { background-color: #1f2937; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #4b5563; font-size: 0.95rem; font-weight: 600; }
+.status { padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.status.shipping { background-color: #ea580c; color: #ffffff; }
+.status.delivered { background-color: #b91c1c; color: #ffffff; }
+.order-body { padding: 1.5rem; }
+.order-body p { margin-bottom: 0.5rem; color: #e5e7eb; font-size: 0.95rem; }
+.order-total { font-weight: 700; color: #f97316 !important; margin-top: 1.25rem; font-size: 1.15rem; }
+
+/* RODAPÉ INSTITUCIONAL */
+footer { background-color: #1a1a1a; color: #d1d5db; text-align: center; padding: 1.5rem; font-size: 0.85rem; margin-top: 2rem; border-top: 2px solid #b91c1c; }
