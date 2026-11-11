@@ -6,6 +6,6 @@ const roupas = ['camiseta', 'vestido', 'jeans', 'bermuda']
 roupas[999] //undefined
 // console.log(roupas[1]) //vestido
 // Loop de repetição infinita
-for (const element of object) {
-    
+for (const roupa of roupas) {
+    console.log(roupa)
 }
